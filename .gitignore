@@ -1,11 +1,66 @@
-# Default ignored files
+# =========================
+# IDEs
+# =========================
+
+# Default
 /shelf/
 /.idea/
+
+# IntelliJ IDEA
+Youhak/.idea
+Youhak/*.iws
+Youhak/*.iml
+Youhak/*.ipr
+Youhak/out/
+Youhak/**/out/
+
+# STS
+Youhak/.apt_generated
+Youhak/.classpath
+Youhak/.factorypath
+Youhak/.project
+Youhak/.settings
+Youhak/.springBeans
+Youhak/.sts4-cache
+Youhak/bin/
+Youhak/**/bin
+
+# NetBeans
+Youhak/nbproject/private/
+Youhak/nbbuild/
+Youhak/dist/
+Youhak/nbdist/
+Youhak/.nb-gradle/
+
+# VS Code
+Youhak/.vscode/
+
 # Editor-based HTTP Client requests
 /httpRequests/
-# Datasource local storage ignored files
+
+# Data source
 /dataSources/
 /dataSources.local.xml
-# Zeppelin ignored files
+
+# Zeppelin
 /ZeppelinRemoteNotebooks/
+
+
+# =========================
+# Build / Dependency Tools
+# =========================
+
+Youhak/HELP.md
+Youhak/.gradle
+Youhak/build/
+Youhak/**/build/
+
+# Gradle Wrapper (keep tracked)
+!Youhak/gradle/wrapper/gradle-wrapper.jar
+
+
+# =========================
+# Environment & Secrets
+# =========================
+
 .env
