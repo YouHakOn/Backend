@@ -18,13 +18,13 @@ repositories {
 }
 
 dependencies {
-    implementation "org.springframework.boot:spring-boot-starter-web:${starterVersion}"
-    implementation "org.springframework.boot:spring-boot-starter-data-jpa:${starterVersion}"
+    implementation "org.springframework.boot:spring-boot-starter-web:${springbootVersion}"
+    implementation "org.springframework.boot:spring-boot-starter-data-jpa:${springbootVersion}"
     implementation "org.flywaydb:flyway-core:${flywayVersion}"
     implementation "org.flywaydb:flyway-mysql:${flywayVersion}"
     runtimeOnly "com.mysql:mysql-connector-j:${mysqlConnectorVersion}"
     developmentOnly "org.springframework.boot:spring-boot-devtools:${devtoolsVersion}"
-    testImplementation "org.springframework.boot:spring-boot-starter-test:${starterVersion}"
+    testImplementation "org.springframework.boot:spring-boot-starter-test:${springbootVersion}"
     testRuntimeOnly "org.junit.platform:junit-platform-launcher:${junitVersion}"
 }
 
