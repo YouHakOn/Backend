@@ -1,33 +1,33 @@
 plugins {
-	id 'java'
-	id 'org.springframework.boot' version '3.4.5'
-	id 'io.spring.dependency-management' version '1.1.7'
+    id 'java'
+    id 'org.springframework.boot' version "${springbootVersion}"
+    id 'io.spring.dependency-management' version "${dependencyManagementVersion}"
 }
 
 group = 'net'
 version = '0.0.1-SNAPSHOT'
 
 java {
-	toolchain {
-		languageVersion = JavaLanguageVersion.of(21)
-	}
+    toolchain {
+        languageVersion = JavaLanguageVersion.of(21)
+    }
 }
 
 repositories {
-	mavenCentral()
+    mavenCentral()
 }
 
 dependencies {
-	implementation "org.springframework.boot:spring-boot-starter-web"
-	implementation "org.springframework.boot:spring-boot-starter-data-jpa"
-	implementation "org.flywaydb:flyway-core:${flywayVersion}"
-	implementation "org.flywaydb:flyway-mysql:${flywayVersion}"
-	runtimeOnly "com.mysql:mysql-connector-j"
-	developmentOnly "org.springframework.boot:spring-boot-devtools"
-	testImplementation "org.springframework.boot:spring-boot-starter-test"
-	testRuntimeOnly "org.junit.platform:junit-platform-launcher"
+    implementation "org.springframework.boot:spring-boot-starter-web:${springbootVersion}"
+    implementation "org.springframework.boot:spring-boot-starter-data-jpa:${springbootVersion}"
+    implementation "org.flywaydb:flyway-core:${flywayVersion}"
+    implementation "org.flywaydb:flyway-mysql:${flywayVersion}"
+    runtimeOnly "com.mysql:mysql-connector-j:${mysqlConnectorVersion}"
+    developmentOnly "org.springframework.boot:spring-boot-devtools:${devtoolsVersion}"
+    testImplementation "org.springframework.boot:spring-boot-starter-test:${springbootVersion}"
+    testRuntimeOnly "org.junit.platform:junit-platform-launcher:${junitVersion}"
 }
 
 tasks.named('test') {
-	useJUnitPlatform()
+    useJUnitPlatform()
 }
