@@ -5,6 +5,7 @@
 # Default
 /shelf/
 /.idea/
+.DS_Store
 
 # IntelliJ IDEA
 Youhak/.idea

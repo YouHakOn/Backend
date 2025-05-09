@@ -4,3 +4,9 @@ spring:
     url: ${MYSQL_JDBC_URL}
     username: ${MYSQL_USER}
     password: ${MYSQL_PASSWORD}
+
+  flyway:
+    enabled: true
+    baseline-on-migrate: true
+    baseline-version: 0
+    locations: classpath:db/migration
