@@ -9,10 +9,19 @@ import org.springframework.data.repository.query.Param;
 
 public interface RoleCategoryJpaRepository extends JpaRepository<RoleCategory, Long> {
 
-    @Query("select rc from RoleCategory rc where rc.id =:id and rc.isDeleted = false")
+    @Query("""
+            select rc
+            from RoleCategory rc
+            where rc.id =:id
+                and rc.isDeleted = false
+            """)
     Optional<RoleCategory> findById(@Param("id") Long id);
 
     @Modifying
-    @Query("update RoleCategory rc set rc.isDeleted = true where rc.id = :id")
+    @Query("""
+            update RoleCategory rc
+            set rc.isDeleted = true
+            where rc.id = :id
+            """)
     void deleteById(@Param("id") Long id);
 }
