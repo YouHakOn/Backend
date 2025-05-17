@@ -1,6 +1,5 @@
 package net.youhak.member.role.repository;
 
-import java.util.Optional;
 import net.youhak.member.role.domain.Role;
 import net.youhak.member.role.domain.RoleCategory;
 import org.springframework.stereotype.Repository;
@@ -16,5 +15,5 @@ public interface RoleRepository {
 
     void roleCategoryDelete(Long roleCategoryId);
 
-    Optional<RoleCategory> findByRoleCategoryId(Long roleCategoryId);
+    RoleCategory findByRoleCategoryId(Long roleCategoryId);
 }

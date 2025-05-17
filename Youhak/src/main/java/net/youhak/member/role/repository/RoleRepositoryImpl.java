@@ -1,10 +1,11 @@
 package net.youhak.member.role.repository;
 
-import java.util.Optional;
 import lombok.RequiredArgsConstructor;
 import net.youhak.member.role.domain.Role;
 import net.youhak.member.role.domain.RoleCategory;
+import org.springframework.stereotype.Repository;
 
+@Repository
 @RequiredArgsConstructor
 public class RoleRepositoryImpl implements RoleRepository {
 
@@ -28,12 +29,13 @@ public class RoleRepositoryImpl implements RoleRepository {
 
     @Override
     public void roleCategoryDelete(final Long roleCategoryId) {
-        roleCategoryJpaRepository.deleteById(roleCategoryId);
         roleJpaRepository.deleteByRoleCategoryId(roleCategoryId);
+        roleCategoryJpaRepository.deleteById(roleCategoryId);
     }
 
     @Override
-    public Optional<RoleCategory> findByRoleCategoryId(final Long roleCategoryId) {
-        return roleCategoryJpaRepository.findById(roleCategoryId);
+    public RoleCategory findByRoleCategoryId(final Long roleCategoryId) {
+        return roleCategoryJpaRepository.findById(roleCategoryId)
+                .orElseThrow(() -> new IllegalArgumentException("카테고리 아이디가 없습니다."));
     }
 }
