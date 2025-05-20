@@ -28,22 +28,22 @@
 
 커밋 메시지는 다음과 같은 형식을 따릅니다:
 
-
 ### 커밋 태그 종류
 
-- `feat`: 새로운 **기능 추가**  
+- `feat`: 새로운 **기능 추가**
 - `chore`: 빌드 업무, 패키지 매니저 설정 등 **기타 변경**
 - `infra`: **인프라** 관련 작업
 - `docs`: **문서** 코드 추가 및 수정
-- `test`: **테스트** 코드 추가 및 수정  
+- `test`: **테스트** 코드 추가 및 수정
 - `refactor`: **리팩토링** (기능 변경 없이 구조 개선)
 
-### 커밋 메시지 예시(only *English*)
+### 커밋 메시지 예시(only _English_)
+
 - feat: add login feature
 - infra: modify Docker compose settings
-- chore: update package dependencies  
-- docs: update README with commit convention  
-- test: add unit test for user registration  
+- chore: update package dependencies
+- docs: update README with commit convention
+- test: add unit test for user registration
 - refactor: remove duplicate code
 
 ---
@@ -57,5 +57,12 @@
   - 리뷰어 지정 필수
   - 관련 이슈 번호 연결 (예: `Closes #101`)
 
-- PR 병합 방식:  
-  `Squash and merge` 방식 사용
+---
+
+## ✅ 코드 컨벤션
+
+우리 프로젝트에서는 Java 코드는 [Google Java Style Guide](https://google.github.io/styleguide/javaguide.html)를 기반으로 작성된 [우아한테크코스 자바 스타일 가이드](https://github.com/woowacourse/woowacourse-docs/tree/main/styleguide/java)를 따릅니다.
+
+### 추가 규칙
+
+- 클래스 선언 직후에는 한 줄을 띄웁니다.
