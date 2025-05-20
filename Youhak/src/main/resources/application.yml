@@ -10,3 +10,9 @@ spring:
     baseline-on-migrate: true
     baseline-version: 0
     locations: classpath:db/migration
+
+  jpa:
+    database: mysql
+    hibernate:
+      ddl-auto: none
+    show-sql: true
