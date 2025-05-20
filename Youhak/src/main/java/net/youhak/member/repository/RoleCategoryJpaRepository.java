@@ -1,7 +1,7 @@
-package net.youhak.member.role.repository;
+package net.youhak.member.repository;
 
 import java.util.Optional;
-import net.youhak.member.role.domain.RoleCategory;
+import net.youhak.member.entity.RoleCategory;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.jpa.repository.Modifying;
 import org.springframework.data.jpa.repository.Query;

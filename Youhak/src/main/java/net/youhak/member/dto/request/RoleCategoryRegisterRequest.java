@@ -1,4 +1,4 @@
-package net.youhak.member.role.api.dto.request;
+package net.youhak.member.dto.request;
 
 public record RoleCategoryRegisterRequest(
         String name
