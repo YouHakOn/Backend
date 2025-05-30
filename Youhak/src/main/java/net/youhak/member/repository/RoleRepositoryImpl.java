@@ -1,8 +1,8 @@
-package net.youhak.member.role.repository;
+package net.youhak.member.repository;
 
 import lombok.RequiredArgsConstructor;
-import net.youhak.member.role.domain.Role;
-import net.youhak.member.role.domain.RoleCategory;
+import net.youhak.member.entity.Role;
+import net.youhak.member.entity.RoleCategory;
 import org.springframework.stereotype.Repository;
 
 @Repository

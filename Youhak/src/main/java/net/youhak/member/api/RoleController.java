@@ -1,9 +1,9 @@
-package net.youhak.member.role.api;
+package net.youhak.member.api;
 
 import lombok.RequiredArgsConstructor;
-import net.youhak.member.role.api.dto.request.RoleCategoryRegisterRequest;
-import net.youhak.member.role.api.dto.request.RoleRegisterRequest;
-import net.youhak.member.role.service.RoleService;
+import net.youhak.member.dto.request.RoleCategoryRegisterRequest;
+import net.youhak.member.dto.request.RoleRegisterRequest;
+import net.youhak.member.service.RoleService;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.DeleteMapping;

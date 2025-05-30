@@ -1,4 +1,4 @@
-package net.youhak.global;
+package net.youhak.shared.entity;
 
 import jakarta.persistence.Column;
 import jakarta.persistence.EntityListeners;

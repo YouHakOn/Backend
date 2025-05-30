@@ -1,12 +1,12 @@
-package net.youhak.member.role.service;
+package net.youhak.member.service;
 
 import jakarta.transaction.Transactional;
 import lombok.RequiredArgsConstructor;
-import net.youhak.member.role.api.dto.request.RoleCategoryRegisterRequest;
-import net.youhak.member.role.api.dto.request.RoleRegisterRequest;
-import net.youhak.member.role.domain.Role;
-import net.youhak.member.role.domain.RoleCategory;
-import net.youhak.member.role.repository.RoleRepository;
+import net.youhak.member.dto.request.RoleCategoryRegisterRequest;
+import net.youhak.member.dto.request.RoleRegisterRequest;
+import net.youhak.member.entity.Role;
+import net.youhak.member.entity.RoleCategory;
+import net.youhak.member.repository.RoleRepository;
 import org.springframework.stereotype.Service;
 
 @Service
