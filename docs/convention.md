@@ -61,7 +61,15 @@
 
 ## ✅ 코드 컨벤션
 
-우리 프로젝트에서는 Java 코드는 [Google Java Style Guide](https://google.github.io/styleguide/javaguide.html)를 기반으로 작성된 [우아한테크코스 자바 스타일 가이드](https://github.com/woowacourse/woowacourse-docs/tree/main/styleguide/java)를 따릅니다.
+- 우리 프로젝트에서는 Java 코드는 [Google Java Style Guide](https://google.github.io/styleguide/javaguide.html)를 기반으로 작성된 [우아한테크코스 자바 스타일 가이드](https://github.com/woowacourse/woowacourse-docs/tree/main/styleguide/java)를 따릅니다.
+- 패키지 구조는 계층 기반이 아닌 **책임 기반 모듈 구조**를 따릅니다.
+
+| 패키지명   | 역할 설명                                                           |
+| ---------- | ------------------------------------------------------------------- |
+| `shared`   | 공통 유틸, 상수, 예외, 어노테이션 등 **범용적으로 재사용되는 자원** |
+| `global`   | 전역 설정, AOP, 예외 처리 등 **Spring 애플리케이션 전반 설정 구성** |
+| `external` | **외부 시스템** (API, DB, 메시지 등)과의 통신 어댑터                |
+| `domain`   | **핵심 비즈니스 도메인 모델과 로직**                                |
 
 ### 추가 규칙
 

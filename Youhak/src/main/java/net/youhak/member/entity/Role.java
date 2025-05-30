@@ -1,4 +1,4 @@
-package net.youhak.member.role.domain;
+package net.youhak.member.entity;
 
 import jakarta.persistence.Entity;
 import jakarta.persistence.FetchType;
@@ -6,7 +6,7 @@ import jakarta.persistence.JoinColumn;
 import jakarta.persistence.ManyToOne;
 import lombok.Builder;
 import lombok.RequiredArgsConstructor;
-import net.youhak.global.BaseEntity;
+import net.youhak.shared.entity.BaseEntity;
 
 @Entity
 @RequiredArgsConstructor

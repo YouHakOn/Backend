@@ -1,7 +1,7 @@
-package net.youhak.member.role.service;
+package net.youhak.member.service;
 
-import net.youhak.member.role.api.dto.request.RoleCategoryRegisterRequest;
-import net.youhak.member.role.api.dto.request.RoleRegisterRequest;
+import net.youhak.member.dto.request.RoleCategoryRegisterRequest;
+import net.youhak.member.dto.request.RoleRegisterRequest;
 
 public interface RoleService {
 

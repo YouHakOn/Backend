@@ -28,6 +28,9 @@ dependencies {
     developmentOnly "org.springframework.boot:spring-boot-devtools:${devtoolsVersion}"
     testImplementation "org.springframework.boot:spring-boot-starter-test:${springbootVersion}"
     testRuntimeOnly "org.junit.platform:junit-platform-launcher:${junitVersion}"
+
+    // 외부 의존성
+    implementation "at.favre.lib:bcrypt:${BCryptVersion}"
 }
 
 tasks.named('test') {
